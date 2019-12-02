@@ -1,3 +1,6 @@
+// Amanda Jeong, Libby Carter
+// Part 1 Driver 1
+
 public class HistogramDriver1
 {
 	public static void main(String[] args)

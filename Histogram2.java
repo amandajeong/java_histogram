@@ -1,5 +1,5 @@
-// Amanda Jeong
-// advanced Histogram class
+// Amanda Jeong, Libby Carter
+// Part 2 Advanced Histogram class
 
 public class Histogram2
 {
@@ -31,12 +31,13 @@ public class Histogram2
 	public String toString()
 	{
 		String s = "";
-		if (flag)
+		if (flag) // if histogram bars have more than 30 *'s
 		{
 			int largest = num[0];
 			for (int i = 1; i < (max-min+1); i++)
 				if(largest < num[i]) largest = num[i];
 			weight = (int)((largest-1)/30) + 1;
+			s += "* = "+ weight + " occurences \n\n";
 		}
 		
 		for (int i = 0; i < (max-min+1); i++)
@@ -44,7 +45,7 @@ public class Histogram2
 			String stars = "";
 			for (int n = 0; n < (int)(num[i]/weight); n++)
 				stars += "*";
-			s += (i+min) + " " + stars + "\n";
+			s += (i+min) + ": " + stars + "\n";
 		}
 		return s;
 	}

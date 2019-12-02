@@ -1,5 +1,5 @@
-// Amanda Jeong
-// Histogram class
+// Amanda Jeong, Libby Carter
+// Part 1 Histogram class
 
 public class Histogram
 {
@@ -20,12 +20,15 @@ public class Histogram
 	public String toString()
 	{
 		String s = "";
+		
 		for (int i = 0; i < max; i++)
 		{
 			String stars = "";
+			
 			for (int n = 0; n < num[i]; n++)
 				stars += "*";
-			s += (i+1) + " " + stars + "\n";
+			
+			s += (i+1) + ": " + stars + "\n";
 		}
 		return s;
 	}
