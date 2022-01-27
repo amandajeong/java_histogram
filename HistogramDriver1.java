@@ -5,10 +5,10 @@ public class HistogramDriver1
 {
 	public static void main(String[] args)
 	{
-		Histogram h = new Histogram(4);
+		Histogram h = new Histogram(5);
 		h.submit(1); h.submit(1);
-		h.submit(1); h.submit(2);
-		h.submit(4); h.submit(4);
+		h.submit(1); h.submit(30);
+		h.submit(3); h.submit(5);
 		System.out.println(h);
 	}
 }

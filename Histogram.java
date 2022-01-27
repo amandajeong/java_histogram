@@ -14,7 +14,7 @@ public class Histogram
 	
 	public void submit(int x)
 	{
-		num[x-1] ++;
+      if(x < max) num[x-1] ++;
 	}
 	
 	public String toString()
